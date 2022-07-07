@@ -1,0 +1,3 @@
+name: hal_we
+build:
+  cmake: .
