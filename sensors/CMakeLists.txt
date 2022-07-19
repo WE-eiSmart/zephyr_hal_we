@@ -2,7 +2,14 @@
 # SPDX-License-Identifier: Apache-2.0
 
 zephyr_include_directories(
+  .
   WeSensorsSDK
+)
+
+zephyr_library_sources(
+  weplatform.c
+  weplatform_i2c.c
+  weplatform_spi.c
 )
 
 if(CONFIG_HIDS)
