@@ -12,7 +12,7 @@ zephyr_library_sources(
   weplatform_spi.c
 )
 
-if(CONFIG_HIDS)
+if(CONFIG_WSEN_HIDS)
   zephyr_include_directories(
     WeSensorsSDK/WSEN_HIDS_2523020210001
   )
@@ -21,7 +21,7 @@ if(CONFIG_HIDS)
   )
 endif()
 
-if(CONFIG_ITDS)
+if(CONFIG_WSEN_ITDS)
   zephyr_include_directories(
     WeSensorsSDK/WSEN_ITDS_2533020201601
   )
@@ -30,7 +30,7 @@ if(CONFIG_ITDS)
   )
 endif()
 
-if(CONFIG_PADS)
+if(CONFIG_WSEN_PADS)
   zephyr_include_directories(
     WeSensorsSDK/WSEN_PADS_2511020213301
   )
@@ -39,7 +39,7 @@ if(CONFIG_PADS)
   )
 endif()
 
-if(CONFIG_PDUS)
+if(CONFIG_WSEN_PDUS)
   zephyr_include_directories(
     WeSensorsSDK/WSEN_PDUS_25131308XXX01
   )
@@ -48,7 +48,7 @@ if(CONFIG_PDUS)
   )
 endif()
 
-if(CONFIG_TIDS)
+if(CONFIG_WSEN_TIDS)
   zephyr_include_directories(
     WeSensorsSDK/WSEN_TIDS_2521020222501
   )
